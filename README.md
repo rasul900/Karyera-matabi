@@ -5,6 +5,8 @@ Bitiruvchilar uchun Telegram Mini App (Next.js 15, React 19, TypeScript):
 - **CV** — fayl yoki matn + soha → AI ko'nikmalarni ajratadi va mos vakansiyalarni darhol ko'rsatadi
 - **Vakansiyalar** — moslik foizi, nima yetishmasligi, 1 klikda ariza
 - **Mentorlar** — katalog, filtrlar, Calendly kabi kun va vaqt tanlab bron qilish
+- **Karyera agenti** — tajriba bazasi, kompetensiyalar xaritasi, boshqa saytlardagi vakansiyalarni tahlil qilish,
+  har bir vakansiya uchun CV (uz/ru/en) va motivatsion xat, arizalar trekeri
 - **Mentor kabineti** — ro'yxatdan o'tish, haftalik jadval, arizalar
 
 Bot: [@karyeramaktabibot](https://t.me/karyeramaktabibot)
@@ -18,7 +20,7 @@ Bot: [@karyeramaktabibot](https://t.me/karyeramaktabibot)
 
 | Rejim | Qachon | Nima bo'ladi |
 |---|---|---|
-| **Demo** | `BACKEND_URL` berilmagan | Server kerak emas. Vakansiya va mentorlar `public/demo/demo.js` da (to'qima), foydalanuvchi amallari telefonda (localStorage) saqlanadi |
+| **Demo** | `BACKEND_URL` berilmagan | Server kerak emas. 14 soha bo'yicha 41 ta vakansiya va mentorlar `public/demo/demo.js` da (to'qima, `demo-src/mock.js` + backend'dagi `scripts/build_demo.py`), foydalanuvchi amallari telefonda (localStorage) saqlanadi |
 | **To'liq** | `BACKEND_URL=https://<python backend>` | `/api/*` so'rovlari Python backendga yo'naltiriladi: haqiqiy baza, botda ro'yxatdan o'tish tekshiruvi, bildirishnomalar |
 
 Python backend (sayt, API, bot): https://github.com/rasul900/start-platform

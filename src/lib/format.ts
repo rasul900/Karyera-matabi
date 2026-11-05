@@ -2,7 +2,8 @@ import { LANG_TAG, Lang, translate } from "./i18n";
 
 const UZ_MONTHS = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"];
 export const PROF_UZ: Record<string, string> = { it: "IT va dasturlash", finance: "Moliya", marketing: "Marketing", law: "Huquq",
-  education: "Ta'lim", engineering: "Muhandislik", design: "Dizayn", sales: "Savdo va xizmat" };
+  education: "Ta'lim", engineering: "Muhandislik", design: "Dizayn", sales: "Savdo va xizmat", health: "Tibbiyot va salomatlik",
+  hr: "HR va kadrlar", logistics: "Logistika", tourism: "Turizm va mehmonxona", media: "Media va jurnalistika", agro: "Qishloq xo'jaligi" };
 export const FMT_UZ: Record<string, string> = { office: "Ofis", remote: "Masofaviy", hybrid: "Gibrid" };
 export const EMP_UZ: Record<string, string> = { full: "To'liq ish kuni", part: "Qisman bandlik", internship: "Stajirovka" };
 

@@ -36,7 +36,7 @@ export const useApp = () => {
 const TABS = [
   { href: "/", key: "tab_home", icon: "M4 11l8-7 8 7v9a1 1 0 0 1-1 1h-5v-6h-4v6H5a1 1 0 0 1-1-1z" },
   { href: "/vacancies", key: "tab_vac", icon: "M9 6V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm2 0h2V5h-2z" },
-  { href: "/cv", key: "tab_cv", icon: "M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.5V9h5.5zM8 13h8v2H8zm0 4h8v2H8z", cls: "tab-cv" },
+  { href: "/career", key: "ka_tab", icon: "M12 2l2.6 6.3L21 9l-5 4.3L17.5 20 12 16.6 6.5 20 8 13.3 3 9l6.4-.7z", cls: "tab-cv" },
   { href: "/mentors", key: "tab_mentors", icon: "M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zm0 2c-4.4 0-8 2.2-8 5v2h16v-2c0-2.8-3.6-5-8-5z" },
   { href: "/bookings", key: "tab_bookings", icon: "M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 9h14v11H5zm2 2v3h3v-3z" },
 ];
@@ -46,7 +46,7 @@ function tabOf(path: string): string {
   if (path.startsWith("/vacancies") || path.startsWith("/applications")) return "/vacancies";
   if (path.startsWith("/mentors")) return "/mentors";
   if (path.startsWith("/bookings") || path.startsWith("/mentor")) return "/bookings";
-  if (path.startsWith("/cv")) return "/cv";
+  if (path.startsWith("/cv") || path.startsWith("/career")) return "/career";
   return "/";
 }
 
